@@ -3,7 +3,8 @@ import axios from "axios";
 
 // آدرس بک‌اند
 const API_URL =
-  process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:5000/api";
+  // process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:5000/api";
+   process.env.NEXT_PUBLIC_API_URL || "https://ammeleyla-server.onrender.com/api";
 
 export const api = axios.create({
   baseURL: API_URL,
